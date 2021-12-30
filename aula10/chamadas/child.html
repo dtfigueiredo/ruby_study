@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+   <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
+   <title>Child o' Flames</title>
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/styles.css">
+   <link rel="stylesheet" href="./css/mobile.css">
+   <link rel="stylesheet" href="./css/modals.css">
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4GZ45EY4X"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-L4GZ45EY4X');
+   </script>
+</head>
+
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="index.html"><img class="img__header img-fluid" src="./assets/logo_dourado.png"
+                  alt="logotipo-header"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse custom__navigator" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item fs-4 ps-3">
+                     <a class="nav-link custom__nav__link active" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item fs-4 ps-3">
+                     <a class="nav-link custom__nav__link" href="./pages/aboutus.html">A BANDA</a>
+                  </li>
+                  <li class="nav-item fs-4 ps-3">
+                     <a class="nav-link custom__nav__link" data-bs-toggle="modal"
+                        data-bs-target="#modal-contato">CONTATO</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <!-- Modal Contato-->
+      <section class="modal fade modal__custom__bg" id="modal-contato" tabindex="-1" aria-labelledby="modalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+            <dialog class="modal-content bg-dark">
+
+               <header class="modal-header bg-dark text-white">
+                  <h5 class="modal-title fs-4" id="modalLabel">Entre em contato</h5>
+                  <button type="button" class="btn btn-dark fs-4" data-bs-dismiss="modal" aria-label="Close">X</button>
+               </header>
+
+               <main class="modal-body bg-dark">
+                  <div class="ratio ratio-16x9">
+                     <iframe width="100%" height="auto"
+                        src="https://us5.list-manage.com/contact-form?u=00536ff23476b9d1b1e2cb4b4&form_id=5ddb11df07484e7ee3123c7bb636bdd0"
+                        frameborder="0"></iframe>
+                  </div>
+               </main>
+
+            </dialog>
+         </div>
+      </section>
+   </header>
+
+   <main>
+      <section class="hero__image">
+         <img src="assets/hero_img_2.png" class="img-fluid hero__img" alt="Banda completa">
+      </section>
+
+      <section class="lastest__releases container-fluid">
+
+         <h2 class="custom__title">Latest Releases</h2>
+
+         <section class="row">
+            <div class="d-flex justify-content-center thumbnail__box">
+               <div class="col-5 d-flex justify-content-center thumbnail" data-bs-toggle="modal"
+                  data-bs-target="#rtfClip">
+                  <img class="thumbnail__img" src="assets/thumb_rtf_final.png" alt="">
+               </div>
+
+               <div class="col-5 d-flex justify-content-center thumbnail" data-bs-toggle="modal"
+                  data-bs-target="#gokClip">
+                  <img class="thumbnail__img" src="assets/thumb_gok.jpg" alt="">
+               </div>
+            </div>
+
+            <!-- Modal Clip RtF -->
+            <div class="modal fade modal__custom__bg" id="rtfClip" tabindex="-1" aria-labelledby="gameOfKingsClip"
+               aria-hidden="true">
+               <div class="modal-dialog modal-xl">
+                  <button type="button" class="btn btn-dark fs-4" data-bs-dismiss="modal" aria-label="Close">X</button>
+
+                  <div class="modal-content">
+                     <div class="ratio ratio-16x9">
+                        <iframe width="100%" id="clip02" height="auto" src="https://www.youtube.com/embed/4kM1nW9iGHk"
+                           title="YouTube iframe player" frameborder="0"
+                           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowfullscreen></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Modal Clip GoK -->
+            <div class="modal fade modal__custom__bg" id="gokClip" tabindex="-1" aria-labelledby="gameOfKingsClip"
+               aria-hidden="true">
+               <div class="modal-dialog modal-xl">
+                  <button type="button" class="btn btn-dark fs-4" data-bs-dismiss="modal" aria-label="Close">X</button>
+
+                  <div class="modal-content">
+                     <div class="ratio ratio-16x9">
+                        <iframe width="100%" id="clip01" height="auto" src="https://www.youtube.com/embed/aj_n2Lbe35w"
+                           title="YouTube iframe player" frameborder="0"
+                           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowfullscreen>
+                        </iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </section>
+      </section>
+
+      <section class="newsletter container-fluid">
+
+         <h2 class="custom__title">Newsletter</h2>
+
+         <section class="row d-flex justify-content-center">
+
+            <div class="col-10">
+               <form
+                  action="https://childoflames.us5.list-manage.com/subscribe/post?u=00536ff23476b9d1b1e2cb4b4&amp;id=4427004bc6"
+                  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                  class="validate form-newsletter" target="_blank" novalidate>
+                  <div class="custom__text__input">
+                     <input class="form-control form-control-lg" ttype="email" value="" id="mce-EMAIL" name="EMAIL"
+                        placeholder="seuemail@exemplo.com" aria-label=".form-control-lg example">
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_00536ff23476b9d1b1e2cb4b4_4427004bc6" tabindex="-1" value=""></div>
+                  <div class="clear custom__btn__input">
+                     <input type="submit" value="Cadastrar-se" name="subscribe" id="mc-embedded-subscribe"
+                        class="btn btn-dark custom__btn">
+                  </div>
+               </form>
+            </div>
+         </section>
+      </section>
+   </main>
+
+   <footer class="footer container-fluid custom__img__parallax footer__content">
+      <section class="footer__content__main container-fluid">
+         <div class="footer__logo">
+            <img src="assets/logo_dourado.png" alt="logo_footer">
+         </div>
+         <ul class="social__custom">
+            <a class="social__link" target="_blank" rel="noreferrer noopener"
+               href="https://open.spotify.com/artist/4FhIbNjEtxU02dDRw040iu"><i class="fab fa-spotify"></i></a>
+            <a class="social__link" target="_blank" rel="noreferrer noopener"
+               href="https://www.deezer.com/en/artist/102346642"><i class="fab fa-deezer"></i></a>
+            <a class="social__link" target="_blank" rel="noreferrer noopener"
+               href="https://music.apple.com/br/artist/child-o-flames/1525310485?l=en"><i
+                  class="fab fa-itunes-note"></i></a>
+            <a class="social__link" target="_blank" rel="noreferrer noopener"
+               href="https://music.youtube.com/watch?v=pnqlEmTMye0&list=RDAMVMpnqlEmTMye0"><i
+                  class="fab fa-youtube-square"></i></a>
+            <a class="social__link" target="_blank" rel="noreferrer noopener"
+               href="https://www.youtube.com/channel/UC_qFq2nOC8AF7ExGsA7r_nA"><i class="fab fa-youtube"></i></a>
+            <a class="social__link" target="_blank" rel="noreferrer noopener"
+               href="https://www.instagram.com/childoflames/"><i class="fab fa-instagram"></i></a>
+            <a class="social__link" target="_blank" rel="noreferrer noopener"
+               href="https://www.facebook.com/childoflames"><i class="fab fa-facebook"></i></a>
+         </ul>
+      </section>
+   </footer>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/cd6e8bae44.js" crossorigin="anonymous"></script>
+   <script src="index.js"></script>
+
+</body>
+
+</html>
